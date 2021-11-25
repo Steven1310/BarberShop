@@ -1,0 +1,33 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Appointment] (Table)
+       [dbo].[Barber] (Table)
+       [dbo].[Barber_Avail] (Table)
+       [dbo].[Barber_shifts] (Table)
+       [dbo].[Haircut] (Table)
+       [dbo].[Shifts] (Table)
+       [dbo].[Shops] (Table)
+       [dbo].[Status] (Table)
+       [dbo].[User] (Table)
+       Foreign Key: unnamed constraint on [dbo].[Appointment] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Appointment] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Appointment] (Foreign Key)
+       [dbo].[fK_BarbershopAvail] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Barber_Avail] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Barber_Avail] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Barber_Avail] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Barber_shifts] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Barber_shifts] (Foreign Key)
+       [dbo].[chk_Review] (Check Constraint)
+
+** Supporting actions

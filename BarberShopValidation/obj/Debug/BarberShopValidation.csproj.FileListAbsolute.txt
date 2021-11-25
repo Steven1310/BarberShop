@@ -1,0 +1,6 @@
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopValidation\bin\Debug\BarberShopValidation.dll
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopValidation\bin\Debug\BarberShopValidation.pdb
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopValidation\obj\Debug\BarberShopValidation.csprojAssemblyReference.cache
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopValidation\obj\Debug\BarberShopValidation.csproj.CoreCompileInputs.cache
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopValidation\obj\Debug\BarberShopValidation.dll
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopValidation\obj\Debug\BarberShopValidation.pdb

@@ -1,0 +1,10 @@
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopDB\bin\Debug\BarberShopDB.dacpac
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopDB\bin\Debug\BarberShopDB.dll
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopDB\bin\Debug\BarberShopDB.pdb
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopDB\obj\Debug\BarberShopDB.sqlprojAssemblyReference.cache
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopDB\obj\Debug\BarberShopDB.dll
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopDB\obj\Debug\BarberShopDB.pdb
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopDB\obj\Debug\Model.xml
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopDB\obj\Debug\refactor.xml
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopDB\obj\Debug\postdeploy.sql
+H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopDB\obj\Debug\predeploy.sql
