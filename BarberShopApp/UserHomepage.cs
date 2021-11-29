@@ -19,13 +19,26 @@ namespace BarberShopApp
         {
             InitializeComponent();
             this.Text = "User Homepage";
+            this.Load += (s, e) => UserHomepageMainForm_Load();
+
             AddOrUpdateUserForm addUpdateUserForm = new AddOrUpdateUserForm();
             buttonAddUpdateUser.Click += (s, ee) => AddOrUpdateForm<User>(dataGridViewUserDetails, addUpdateUserForm);
 
+            buttonAddNewAppointment.Click += (s, ee) => AddAppointmentForm();
+
+
+        }
+
+        private void AddAppointmentForm()
+        {
+            AddAppointment addAppointment = new AddAppointment();
+            addAppointment.Show();
+        }
+
+        private void UserHomepageMainForm_Load()
+        {
             InitializeDataGridView<User>(dataGridViewUserDetails, "Appointments");
             InitializeDataGridView<Appointment>(dataGridViewAppointmentDetails, "Haircut", "Status", "User", "Barber_Avail", "Review");
-
-           
         }
 
         /// <summary>

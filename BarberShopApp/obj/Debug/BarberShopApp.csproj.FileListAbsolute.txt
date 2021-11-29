@@ -43,6 +43,6 @@ C:\Users\User\Desktop\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.Propertie
 C:\Users\User\Desktop\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.UserHomepage.resources
 C:\Users\User\Desktop\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.csproj.GenerateResource.cache
 C:\Users\User\Desktop\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.csproj.CopyComplete
 C:\Users\User\Desktop\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.exe
 C:\Users\User\Desktop\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.pdb
+C:\Users\User\Desktop\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.AddAppointment.resources
