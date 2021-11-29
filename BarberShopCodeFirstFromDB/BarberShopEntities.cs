@@ -10,6 +10,8 @@ namespace BarberShopCodeFirstFromDB
         public BarberShopEntities()
             : base("name=BarberShopConnection")
         {
+            this.Configuration.LazyLoadingEnabled = false;
+
         }
 
         public virtual DbSet<C__RefactorLog> C__RefactorLog { get; set; }

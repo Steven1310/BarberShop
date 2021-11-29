@@ -44,5 +44,11 @@
     <Compile Include="UserValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BarberShopCodeFirstFromDB\BarberShopCodeFirstFromDB.csproj">
+      <Project>{C1216DA8-5CC4-4BF0-BF47-0B34BF116750}</Project>
+      <Name>BarberShopCodeFirstFromDB</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

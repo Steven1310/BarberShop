@@ -43,6 +43,10 @@ namespace SeedDatabaseExtensions
 			// seed Shifts data
 			List<Shift> shiftList = new List<Shift>()  {
 					new Shift{shift_id=1, shift_start_time=TimeSpan.Parse("13:20:00") ,shift_end_time=TimeSpan.Parse("17:50:00")},
+					new Shift{shift_id=2, shift_start_time=TimeSpan.Parse("14:20:00") ,shift_end_time=TimeSpan.Parse("16:50:00")},
+					new Shift{shift_id=3, shift_start_time=TimeSpan.Parse("15:20:00") ,shift_end_time=TimeSpan.Parse("18:50:00")},
+					new Shift{shift_id=4, shift_start_time=TimeSpan.Parse("16:20:00") ,shift_end_time=TimeSpan.Parse("16:50:00")},
+					new Shift{shift_id=5, shift_start_time=TimeSpan.Parse("17:20:00") ,shift_end_time=TimeSpan.Parse("19:50:00")},
 			};
 
 			// use a dictionary to set the shift_id fields in  Barber_shifts
@@ -51,9 +55,32 @@ namespace SeedDatabaseExtensions
 			context.SaveChanges();
 
 			// seed Barber data
-			List<Barber> barberList = new List<Barber>() {
-				new Barber { barber_id=1, barber_name="John",barber_email="john@gmail.com", barber_contact="236-789-1234"},
+			//List<Barber> barberList = new List<Barber>() {
+			//	new Barber { barber_id=1, barber_name="John",barber_email="john@gmail.com", barber_contact="236-789-1234"},
+			//};
+
+
+			List<Barber> barberList = new List<Barber>()  {
+				new Barber { barber_id=1, barber_name = "John",barber_email = "john@gmail.com", barber_contact = "236-789-1234" },
+				new Barber { barber_id=2, barber_name = "Bill",barber_email = "jbkelling1@discuz.net", barber_contact = "488-681-5180" },
+				new Barber { barber_id=3, barber_name = "Tudor",barber_email = "tharris2@over-blog.com", barber_contact = "869-743-7544" },
+				new Barber { barber_id=4, barber_name = "Lucais",barber_email = "lparcell3@skyrock.com", barber_contact = "632-446-9773" },
+				new Barber { barber_id=5, barber_name = "Rheta",barber_email = "rdundredge4@linkedin.com", barber_contact = "134-581-1712" },
+				new Barber { barber_id=6, barber_name = "Emmalynn",barber_email = "eedinburough5@github.com", barber_contact = "566-643-4531" },
+				new Barber { barber_id=7, barber_name = "Iorgos",barber_email = "imundell6@deliciousdays.com", barber_contact = "526-643-4331" },
+				new Barber { barber_id=8, barber_name = "Abbot",barber_email = "aswatton7@squarespace.com", barber_contact = "223-402-8437" },
+				new Barber { barber_id=9, barber_name = "Augustus",barber_email = "ahedan8@vistaprint.com", barber_contact = "767-738-5395" },
+				new Barber { barber_id=10, barber_name = "Kingsley",barber_email = "kwarters9@yelp.com", barber_contact = "346-838-8774" },
+				new Barber { barber_id=11, barber_name = "Florinda",barber_email = "jstacka@google.com", barber_contact = "574-865-0888" },
+				new Barber { barber_id=12, barber_name = "Bryon",barber_email = "rfreakq@goo.com'", barber_contact = "767-221-3642" },
+				new Barber { barber_id=13, barber_name = "Inna",barber_email = "eesbergers@acquirethisname.com", barber_contact = "273-481-5406" },
+				new Barber { barber_id=14, barber_name = "Winnie",barber_email = "llehuquetu@angelfire.com", barber_contact = "371-785-7410" },
+				new Barber { barber_id=15, barber_name = "Rod",barber_email = "edeehanw@tamu.edu", barber_contact = "837-564-7153" }
+
 			};
+
+
+
 
 			// use a dictionary to set the barber_id fields in Barber_shifts
 
@@ -64,7 +91,11 @@ namespace SeedDatabaseExtensions
 
 			// seed Shifts data
 			List<Barber_shifts> barber_shiftsList = new List<Barber_shifts>()  {
-					new Barber_shifts{barber_id=1,shift_id=1,price=15,Barber=barbers[1],Shift=shifts[1]},
+					new Barber_shifts{barber_id=1,shift_id=1,price=15,Barber=barbers[1],Shift=shifts[1]}
+					//new Barber_shifts{barber_id=2,shift_id=1,price=25,Barber=barbers[1],Shift=shifts[1]},
+					//new Barber_shifts{barber_id=1,shift_id=1,price=35,Barber=barbers[1],Shift=shifts[1]},
+					//new Barber_shifts{barber_id=2,shift_id=1,price=15,Barber=barbers[1],Shift=shifts[1]},
+					//new Barber_shifts{barber_id=3,shift_id=1,price=25,Barber=barbers[1],Shift=shifts[1]},
 			};
 
 			// use a dictionary to set the barber_id and shift_id fields in Barber_Avail
