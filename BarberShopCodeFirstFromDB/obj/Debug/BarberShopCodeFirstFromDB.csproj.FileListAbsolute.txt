@@ -10,3 +10,14 @@ H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSI
 H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.CopyComplete
 H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.dll
 H:\Douglas\SEM_4_FALL2021\CSIS-4050-001_Advanced OO Prog for Bus App\PROJECT\CSIS4050_Grp3_BarberShop\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.pdb
+C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\BarberShopCodeFirstFromDB.dll.config
+C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\BarberShopCodeFirstFromDB.dll
+C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\BarberShopCodeFirstFromDB.pdb
+C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.CopyComplete
+C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.dll
+C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.pdb
