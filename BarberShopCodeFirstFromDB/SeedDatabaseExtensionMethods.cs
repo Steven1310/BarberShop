@@ -43,10 +43,20 @@ namespace SeedDatabaseExtensions
 			// seed Shifts data
 			List<Shift> shiftList = new List<Shift>()  {
 					new Shift{shift_id=1, shift_start_time=TimeSpan.Parse("13:20:00") ,shift_end_time=TimeSpan.Parse("17:50:00")},
-					new Shift{shift_id=2, shift_start_time=TimeSpan.Parse("14:20:00") ,shift_end_time=TimeSpan.Parse("16:50:00")},
-					new Shift{shift_id=3, shift_start_time=TimeSpan.Parse("15:20:00") ,shift_end_time=TimeSpan.Parse("18:50:00")},
-					new Shift{shift_id=4, shift_start_time=TimeSpan.Parse("16:20:00") ,shift_end_time=TimeSpan.Parse("16:50:00")},
-					new Shift{shift_id=5, shift_start_time=TimeSpan.Parse("17:20:00") ,shift_end_time=TimeSpan.Parse("19:50:00")},
+					new Shift{shift_id=2, shift_start_time=TimeSpan.Parse("9:30:00") ,shift_end_time=TimeSpan.Parse("17:45:00")},
+					new Shift{shift_id=3, shift_start_time=TimeSpan.Parse("10:25:00") ,shift_end_time=TimeSpan.Parse("13:30:00")},
+					new Shift{shift_id=4, shift_start_time=TimeSpan.Parse("11:00:00") ,shift_end_time=TimeSpan.Parse("17:00:00")},
+					new Shift{shift_id=5, shift_start_time=TimeSpan.Parse("10:30:00") ,shift_end_time=TimeSpan.Parse("19:30:00")},
+					new Shift{shift_id=6, shift_start_time=TimeSpan.Parse("11:00:00") ,shift_end_time=TimeSpan.Parse("12:25:00")},
+					new Shift{shift_id=7, shift_start_time=TimeSpan.Parse("14:00:00") ,shift_end_time=TimeSpan.Parse("14:45:00")},
+					new Shift{shift_id=8, shift_start_time=TimeSpan.Parse("11:00:00") ,shift_end_time=TimeSpan.Parse("13:50:00")},
+					new Shift{shift_id=9, shift_start_time=TimeSpan.Parse("12:15:00") ,shift_end_time=TimeSpan.Parse("16:50:00")},
+					new Shift{shift_id=10, shift_start_time=TimeSpan.Parse("11:30:00") ,shift_end_time=TimeSpan.Parse("12:20:00")},
+					new Shift{shift_id=11, shift_start_time=TimeSpan.Parse("12:20:00") ,shift_end_time=TimeSpan.Parse("14:30:00")},
+					new Shift{shift_id=12, shift_start_time=TimeSpan.Parse("11:00:00") ,shift_end_time=TimeSpan.Parse("13:30:00")},
+					new Shift{shift_id=13, shift_start_time=TimeSpan.Parse("14:30:00") ,shift_end_time=TimeSpan.Parse("15:00:00")},
+					new Shift{shift_id=14, shift_start_time=TimeSpan.Parse("10:00:00") ,shift_end_time=TimeSpan.Parse("18:00:00")},
+					new Shift{shift_id=15, shift_start_time=TimeSpan.Parse("11:50:00") ,shift_end_time=TimeSpan.Parse("13:30:00")},
 			};
 
 			// use a dictionary to set the shift_id fields in  Barber_shifts
@@ -88,14 +98,18 @@ namespace SeedDatabaseExtensions
 
 			context.Barbers.AddRange(barbers.Values);
 			context.SaveChanges();
-
 			// seed Shifts data
 			List<Barber_shifts> barber_shiftsList = new List<Barber_shifts>()  {
-					new Barber_shifts{barber_id=1,shift_id=1,price=15,Barber=barbers[1],Shift=shifts[1]}
-					//new Barber_shifts{barber_id=2,shift_id=1,price=25,Barber=barbers[1],Shift=shifts[1]},
-					//new Barber_shifts{barber_id=1,shift_id=1,price=35,Barber=barbers[1],Shift=shifts[1]},
-					//new Barber_shifts{barber_id=2,shift_id=1,price=15,Barber=barbers[1],Shift=shifts[1]},
-					//new Barber_shifts{barber_id=3,shift_id=1,price=25,Barber=barbers[1],Shift=shifts[1]},
+					new Barber_shifts{barber_id=1,shift_id=1,price=15,Barber=barbers[1],Shift=shifts[1]},
+                    new Barber_shifts{barber_id=2,shift_id=2,price=25,Barber=barbers[2],Shift=shifts[2]},
+                    new Barber_shifts{barber_id=3,shift_id=3,price=20,Barber=barbers[3],Shift=shifts[3]},
+                    new Barber_shifts{barber_id=4,shift_id=4,price=15,Barber=barbers[4],Shift=shifts[4]},
+                    new Barber_shifts{barber_id=5,shift_id=5,price=15,Barber=barbers[5],Shift=shifts[5]},
+					new Barber_shifts{barber_id=6,shift_id=6,price=20,Barber=barbers[6],Shift=shifts[6]},
+					new Barber_shifts{barber_id=7,shift_id=7,price=25,Barber=barbers[7],Shift=shifts[7]},
+					new Barber_shifts{barber_id=8,shift_id=8,price=15,Barber=barbers[8],Shift=shifts[8]},
+					new Barber_shifts{barber_id=9,shift_id=9,price=20,Barber=barbers[9],Shift=shifts[9]},
+					new Barber_shifts{barber_id=10,shift_id=10,price=15,Barber=barbers[10],Shift=shifts[10]}
 			};
 
 			// use a dictionary to set the barber_id and shift_id fields in Barber_Avail
@@ -153,7 +167,7 @@ namespace SeedDatabaseExtensions
 			// seed Barber_Avail data
 			List<Barber_Avail> barber_AvailList = new List<Barber_Avail>()  {
 					new Barber_Avail{barberAvail_id=1,shop_id=1,barber_id=1,shift_id=1,Shop=shops[1],Barber_shifts=barber_shifts[1]},
-					/*new Barber_Avail{barberAvail_id=2,shop_id=1,barber_id=2,shift_id=2,Shop=shops[1],Barber_shifts=barber_shifts[2]},
+					new Barber_Avail{barberAvail_id=2,shop_id=1,barber_id=2,shift_id=2,Shop=shops[1],Barber_shifts=barber_shifts[2]},
 					new Barber_Avail{barberAvail_id=3,shop_id=1,barber_id=3,shift_id=3,Shop=shops[1],Barber_shifts=barber_shifts[3]},
 					new Barber_Avail{barberAvail_id=4,shop_id=2,barber_id=4,shift_id=4,Shop=shops[2],Barber_shifts=barber_shifts[4]},
 					new Barber_Avail{barberAvail_id=5,shop_id=2,barber_id=5,shift_id=5,Shop=shops[2],Barber_shifts=barber_shifts[5]},
@@ -166,7 +180,7 @@ namespace SeedDatabaseExtensions
 					new Barber_Avail{barberAvail_id=12,shop_id=4,barber_id=2,shift_id=2,Shop=shops[4],Barber_shifts=barber_shifts[2]},
 					new Barber_Avail{barberAvail_id=13,shop_id=5,barber_id=3,shift_id=3,Shop=shops[5],Barber_shifts=barber_shifts[3]},
 					new Barber_Avail{barberAvail_id=14,shop_id=5,barber_id=4,shift_id=4,Shop=shops[5],Barber_shifts=barber_shifts[4]},
-					new Barber_Avail{barberAvail_id=15,shop_id=5,barber_id=5,shift_id=5,Shop=shops[5],Barber_shifts=barber_shifts[5]}*/
+					new Barber_Avail{barberAvail_id=15,shop_id=5,barber_id=5,shift_id=5,Shop=shops[5],Barber_shifts=barber_shifts[5]}
 			};
 
 			// use a dictionary to set the barberAvail_id fields in Appointments

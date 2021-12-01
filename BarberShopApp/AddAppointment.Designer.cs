@@ -49,33 +49,45 @@ namespace BarberShopApp
             // 
             // dataGridViewUser
             // 
+            this.dataGridViewUser.AllowUserToAddRows = false;
+            this.dataGridViewUser.AllowUserToDeleteRows = false;
             this.dataGridViewUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewUser.Location = new System.Drawing.Point(44, 40);
             this.dataGridViewUser.Name = "dataGridViewUser";
+            this.dataGridViewUser.ReadOnly = true;
             this.dataGridViewUser.Size = new System.Drawing.Size(184, 150);
             this.dataGridViewUser.TabIndex = 0;
             // 
             // dataGridViewShop
             // 
+            this.dataGridViewShop.AllowUserToAddRows = false;
+            this.dataGridViewShop.AllowUserToDeleteRows = false;
             this.dataGridViewShop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewShop.Location = new System.Drawing.Point(272, 40);
             this.dataGridViewShop.Name = "dataGridViewShop";
+            this.dataGridViewShop.ReadOnly = true;
             this.dataGridViewShop.Size = new System.Drawing.Size(367, 150);
             this.dataGridViewShop.TabIndex = 1;
             // 
             // dataGridViewBarber
             // 
+            this.dataGridViewBarber.AllowUserToAddRows = false;
+            this.dataGridViewBarber.AllowUserToDeleteRows = false;
             this.dataGridViewBarber.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewBarber.Location = new System.Drawing.Point(682, 40);
             this.dataGridViewBarber.Name = "dataGridViewBarber";
+            this.dataGridViewBarber.ReadOnly = true;
             this.dataGridViewBarber.Size = new System.Drawing.Size(311, 150);
             this.dataGridViewBarber.TabIndex = 2;
             // 
             // dataGridViewHaircut
             // 
+            this.dataGridViewHaircut.AllowUserToAddRows = false;
+            this.dataGridViewHaircut.AllowUserToDeleteRows = false;
             this.dataGridViewHaircut.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewHaircut.Location = new System.Drawing.Point(44, 231);
             this.dataGridViewHaircut.Name = "dataGridViewHaircut";
+            this.dataGridViewHaircut.ReadOnly = true;
             this.dataGridViewHaircut.Size = new System.Drawing.Size(258, 142);
             this.dataGridViewHaircut.TabIndex = 3;
             // 

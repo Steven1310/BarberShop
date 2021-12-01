@@ -30,7 +30,8 @@ namespace BarberShopApp
             var shopId = dataGridViewShop.CurrentRow.Cells["shop_id"].Value;
 
             var query = Controller<BarberShopEntities, Barber_Avail>.GetEntities(it => it.shop_id == Convert.ToInt32(shopId));
-            var barbers = Controller<BarberShopEntities, Barber>.GetEntities();
+            var barbers = Controller<BarberShopEntities, Shop>.GetEntitiesWithIncluded("Barber_Avail");
+            
             dataGridViewBarber.DataSource = query.ToList();
 
         }
