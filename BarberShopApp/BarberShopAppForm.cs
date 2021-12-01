@@ -24,14 +24,27 @@ namespace BarberShopApp
             InitializeComponent();
             this.Text = "Precise Cut";
             this.Load += (s, e) => BarberShopAppMainForm_Load();
+
+            this.buttonUser.Click += new System.EventHandler(this.buttonUserClick);
+        }
+
+        private void buttonUserClick(object sender, EventArgs e)
+        {
+            UserHomepage userHomepage = new UserHomepage();
+            userHomepage.Show();
         }
 
         private void BarberShopAppMainForm_Load()
         {
             using (BarberShopEntities context = new BarberShopEntities())
             {
-                context.SeedDatabase();
+               //context.SeedDatabase();
+
+                
             }
+
+
+
         }
     }
 }
