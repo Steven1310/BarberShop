@@ -14,6 +14,11 @@ namespace BarberShopApp
 {
     public partial class AddAppointment : Form
     {
+        private int userId;
+        private int shopId;
+        private int haircutId;
+        private int barberAvailId;
+
         public AddAppointment()
         {
             InitializeComponent();
@@ -21,13 +26,109 @@ namespace BarberShopApp
 
             // register event handler for when a datagridview row is selected
 
-            dataGridViewShop.Click += updatedData;
+            dataGridViewUser.Click += updatedUserData;
+            dataGridViewShop.Click += updatedShopData;
+            dataGridViewHaircut.Click += updatedHaircutData;
+            dataGridViewBarber.Click += updatedBarberAvailData;
+          
+
+
+
+            buttonBookAppointment.Click += bookAppointment;
 
         }
 
-        private void updatedData(object sender=null, EventArgs e=null)
+        private void updatedBarberAvailData(object sender, EventArgs e)
         {
-            var shopId = dataGridViewShop.CurrentRow.Cells["shop_id"].Value;
+            barberAvailId = (int)dataGridViewBarber.CurrentRow.Cells["barberAvail_id"].Value;
+        }
+
+        private void updatedHaircutData(object sender, EventArgs e)
+        {
+            haircutId = (int)dataGridViewHaircut.CurrentRow.Cells["haircut_id"].Value;
+        }
+
+        private void updatedUserData(object sender, EventArgs e)
+        {
+             userId = (int)dataGridViewUser.CurrentRow.Cells["user_id"].Value;
+        }
+
+        private void bookAppointment(object sender, EventArgs e)
+        {
+
+            //if (String.IsNullOrEmpty(textBoxUserName.Text))
+            //{
+            //    MessageBox.Show("Enter User Name");
+            //    return;
+            //}
+
+            //if (String.IsNullOrEmpty(textBoxUserEmail.Text))
+            //{
+            //    MessageBox.Show("Enter User Email");
+            //    return;
+            //}
+
+            //if (String.IsNullOrEmpty(textBoxUserContact.Text))
+            //{
+            //    MessageBox.Show("Enter User Contact");
+            //    return;
+            //}
+            //   INSERT INTO[dbo].[Appointment] ([appointment_id],[barberAvail_id],[haircut_id],[user_id],[appointment_time],[status_id],[payment_status]) VALUES(1, 1, 1, 1, '14:00:00', 'PENDING', 'N')
+
+            // get the user data from the textboxes
+            Appointment appointment = new Appointment();
+            appointment.user_id = userId;
+            appointment.barberAvail_id = barberAvailId;
+            appointment.haircut_id = haircutId;
+            appointment.status_id = "PENDING";
+            TimeSpan appointmentTime =TimeSpan.Parse(textBoxAppointmentTime.Text);
+            appointment.appointment_time = appointmentTime;
+
+            if (checkBoxPaymentStatus.Checked)
+            {
+                appointment.payment_status = "Y";
+            }
+            
+
+            //if (user.UserInfoIsInvalid())
+            //{
+            //    MessageBox.Show("Enter proper User details");
+            //    return;
+            //}
+
+            // now update the db
+            if (Controller<BarberShopEntities, Appointment>.AddEntity(appointment) == null)
+            {
+                MessageBox.Show("Appointment add to database failed");
+                return;
+            }
+
+            // user.Appointments = department;
+
+            //if (Controller<BarberShopEntities, User>.UpdateEntity(user) == false)
+            //{
+            //    Controller<BarberShopEntities, User>.DeleteEntity(user);
+            //    MessageBox.Show("user add to database failed");
+            //    return;
+            //}
+
+            else
+            {
+                MessageBox.Show("Appointment added successfully");
+                UserHomepage userHomepage = new UserHomepage();
+                userHomepage.Show();
+            }
+
+            // if everyting is ok, close the form.
+
+            this.DialogResult = DialogResult.OK;
+
+            Close(); // this will not dispose the form on hide!
+        }
+
+        private void updatedShopData(object sender=null, EventArgs e=null)
+        {
+             shopId = (int)dataGridViewShop.CurrentRow.Cells["shop_id"].Value;
 
             var query = Controller<BarberShopEntities, Barber_Avail>.GetEntities(it => it.shop_id == Convert.ToInt32(shopId));
             var barbers = Controller<BarberShopEntities, Shop>.GetEntitiesWithIncluded("Barber_Avail");

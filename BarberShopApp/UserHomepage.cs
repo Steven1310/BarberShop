@@ -33,6 +33,7 @@ namespace BarberShopApp
         {
             AddAppointment addAppointment = new AddAppointment();
             addAppointment.Show();
+            Close();
         }
 
         private void UserHomepageMainForm_Load()
