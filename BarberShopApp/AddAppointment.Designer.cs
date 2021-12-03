@@ -38,9 +38,9 @@ namespace BarberShopApp
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.labelDateTimeAppointment = new System.Windows.Forms.Label();
-            this.dateTimePickerAppointmentTime = new System.Windows.Forms.DateTimePicker();
             this.checkBoxPaymentStatus = new System.Windows.Forms.CheckBox();
             this.buttonBookAppointment = new System.Windows.Forms.Button();
+            this.textBoxAppointmentTime = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBarber)).BeginInit();
@@ -141,13 +141,6 @@ namespace BarberShopApp
             this.labelDateTimeAppointment.TabIndex = 9;
             this.labelDateTimeAppointment.Text = "Appointment Time";
             // 
-            // dateTimePickerAppointmentTime
-            // 
-            this.dateTimePickerAppointmentTime.Location = new System.Drawing.Point(381, 241);
-            this.dateTimePickerAppointmentTime.Name = "dateTimePickerAppointmentTime";
-            this.dateTimePickerAppointmentTime.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerAppointmentTime.TabIndex = 10;
-            // 
             // checkBoxPaymentStatus
             // 
             this.checkBoxPaymentStatus.AutoSize = true;
@@ -167,14 +160,22 @@ namespace BarberShopApp
             this.buttonBookAppointment.Text = "Book";
             this.buttonBookAppointment.UseVisualStyleBackColor = true;
             // 
+            // textBoxAppointmentTime
+            // 
+            this.textBoxAppointmentTime.Location = new System.Drawing.Point(381, 264);
+            this.textBoxAppointmentTime.Name = "textBoxAppointmentTime";
+            this.textBoxAppointmentTime.Size = new System.Drawing.Size(122, 20);
+            this.textBoxAppointmentTime.TabIndex = 13;
+            this.textBoxAppointmentTime.Text = "HH:MM:SS";
+            // 
             // AddAppointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1026, 444);
+            this.Controls.Add(this.textBoxAppointmentTime);
             this.Controls.Add(this.buttonBookAppointment);
             this.Controls.Add(this.checkBoxPaymentStatus);
-            this.Controls.Add(this.dateTimePickerAppointmentTime);
             this.Controls.Add(this.labelDateTimeAppointment);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -206,8 +207,8 @@ namespace BarberShopApp
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label labelDateTimeAppointment;
-        private System.Windows.Forms.DateTimePicker dateTimePickerAppointmentTime;
         private System.Windows.Forms.CheckBox checkBoxPaymentStatus;
         private System.Windows.Forms.Button buttonBookAppointment;
+        private System.Windows.Forms.TextBox textBoxAppointmentTime;
     }
 }

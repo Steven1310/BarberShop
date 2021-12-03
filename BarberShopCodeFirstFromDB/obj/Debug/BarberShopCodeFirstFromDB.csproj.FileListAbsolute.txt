@@ -18,6 +18,6 @@ C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFrame
 C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.xml
 C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.CopyComplete
 C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.dll
 C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.pdb
+C:\Users\User\Desktop\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.AssemblyReference.cache
