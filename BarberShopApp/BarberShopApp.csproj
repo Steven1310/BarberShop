@@ -68,6 +68,12 @@
     <Compile Include="AddOrUpdateUserForm.Designer.cs">
       <DependentUpon>AddOrUpdateUserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="BarberShopAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarberShopAdminForm.Designer.cs">
+      <DependentUpon>BarberShopAdminForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BarberShopAppForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddOrUpdateUserForm.resx">
       <DependentUpon>AddOrUpdateUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarberShopAdminForm.resx">
+      <DependentUpon>BarberShopAdminForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BarberShopAppForm.resx">
       <DependentUpon>BarberShopAppForm.cs</DependentUpon>
