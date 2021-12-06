@@ -28,14 +28,18 @@ namespace BarberShopApp
 
 
         }
-
+        /// <summary>
+        /// showing the add appointment form
+        /// </summary>
         private void AddAppointmentForm()
         {
             AddAppointment addAppointment = new AddAppointment();
             addAppointment.Show();
             Close();
         }
-
+        /// <summary>
+        /// loading the user homepage
+        /// </summary>
         private void UserHomepageMainForm_Load()
         {
             InitializeDataGridView<User>(dataGridViewUserDetails, "Appointments");
@@ -43,7 +47,7 @@ namespace BarberShopApp
         }
 
         /// <summary>
-        /// 
+        /// add or update form as a generic method
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="dataGridView"></param>
@@ -70,7 +74,7 @@ namespace BarberShopApp
             addUpdateForm.Hide();
         }
         /// <summary>
-        /// 
+        /// generic method to show datagridview from database
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="gridView"></param>
@@ -98,7 +102,7 @@ namespace BarberShopApp
         }
 
         /// <summary>
-        /// 
+        /// initialize the datagridview
         /// </summary>
         /// <param name="gridView"></param>
         private void InnitDatagridviewProperties(DataGridView gridView)
@@ -138,13 +142,6 @@ namespace BarberShopApp
             // get the item
 
             T item = e.Row.DataBoundItem as T;
-            //if (typeof(T) == typeof(User))
-            //{
-            //    var users = Controller<BarberShopEntities, User>.GetEntities();
-            //    var user = users
-            //        .Where(d => d.user_id == (item as User).user_id).FirstOrDefault();
-            //    (item as User).Appointments = user;
-            //}
 
             Debug.WriteLine("DeletingRow " + e.Row.Index + " entity " + typeof(T) + " " + item);
 

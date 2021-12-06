@@ -33,7 +33,6 @@ namespace BarberShopApp
             this.labelAppointmentsTable = new System.Windows.Forms.Label();
             this.dataGridViewAppointmentDetails = new System.Windows.Forms.DataGridView();
             this.buttonAddUpdateUser = new System.Windows.Forms.Button();
-            this.buttonAddUpdateAppointments = new System.Windows.Forms.Button();
             this.dataGridViewUserDetails = new System.Windows.Forms.DataGridView();
             this.buttonAddNewAppointment = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAppointmentDetails)).BeginInit();
@@ -75,15 +74,6 @@ namespace BarberShopApp
             this.buttonAddUpdateUser.Text = "Add/Update User";
             this.buttonAddUpdateUser.UseVisualStyleBackColor = true;
             // 
-            // buttonAddUpdateAppointments
-            // 
-            this.buttonAddUpdateAppointments.Location = new System.Drawing.Point(983, 345);
-            this.buttonAddUpdateAppointments.Name = "buttonAddUpdateAppointments";
-            this.buttonAddUpdateAppointments.Size = new System.Drawing.Size(82, 43);
-            this.buttonAddUpdateAppointments.TabIndex = 5;
-            this.buttonAddUpdateAppointments.Text = "Add/Update Appointments";
-            this.buttonAddUpdateAppointments.UseVisualStyleBackColor = true;
-            // 
             // dataGridViewUserDetails
             // 
             this.dataGridViewUserDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -96,7 +86,7 @@ namespace BarberShopApp
             // 
             this.buttonAddNewAppointment.BackColor = System.Drawing.SystemColors.ControlLight;
             this.buttonAddNewAppointment.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddNewAppointment.Location = new System.Drawing.Point(919, 104);
+            this.buttonAddNewAppointment.Location = new System.Drawing.Point(823, 104);
             this.buttonAddNewAppointment.Name = "buttonAddNewAppointment";
             this.buttonAddNewAppointment.Size = new System.Drawing.Size(106, 66);
             this.buttonAddNewAppointment.TabIndex = 7;
@@ -107,10 +97,9 @@ namespace BarberShopApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1111, 494);
+            this.ClientSize = new System.Drawing.Size(995, 503);
             this.Controls.Add(this.buttonAddNewAppointment);
             this.Controls.Add(this.dataGridViewUserDetails);
-            this.Controls.Add(this.buttonAddUpdateAppointments);
             this.Controls.Add(this.buttonAddUpdateUser);
             this.Controls.Add(this.dataGridViewAppointmentDetails);
             this.Controls.Add(this.labelAppointmentsTable);
@@ -130,7 +119,6 @@ namespace BarberShopApp
         private System.Windows.Forms.Label labelAppointmentsTable;
         private System.Windows.Forms.DataGridView dataGridViewAppointmentDetails;
         private System.Windows.Forms.Button buttonAddUpdateUser;
-        private System.Windows.Forms.Button buttonAddUpdateAppointments;
         private System.Windows.Forms.DataGridView dataGridViewUserDetails;
         private System.Windows.Forms.Button buttonAddNewAppointment;
     }
