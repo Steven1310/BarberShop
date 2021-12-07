@@ -31,7 +31,7 @@ namespace BarberShopApp
             dataGridViewShop.Click += updatedShopData;
             dataGridViewHaircut.Click += updatedHaircutData;
             dataGridViewBarber.Click += updatedBarberAvailData;
-          
+
 
             buttonBookAppointment.Click += bookAppointment;
 
@@ -54,7 +54,7 @@ namespace BarberShopApp
         {
             haircutId = (int)dataGridViewHaircut.CurrentRow.Cells["haircut_id"].Value;
             totalPrice = (int)dataGridViewHaircut.CurrentRow.Cells["price"].Value;
-            labelPrice.Text = "$"+totalPrice.ToString();
+            labelPrice.Text = "$" + totalPrice.ToString();
 
         }
         /// <summary>
@@ -64,7 +64,7 @@ namespace BarberShopApp
         /// <param name="e"></param>
         private void updatedUserData(object sender, EventArgs e)
         {
-             userId = (int)dataGridViewUser.CurrentRow.Cells["user_id"].Value;
+            userId = (int)dataGridViewUser.CurrentRow.Cells["user_id"].Value;
         }
         /// <summary>
         /// 
@@ -79,14 +79,14 @@ namespace BarberShopApp
             appointment.barberAvail_id = barberAvailId;
             appointment.haircut_id = haircutId;
             appointment.status_id = "PENDING";
-            TimeSpan appointmentTime =TimeSpan.Parse(textBoxAppointmentTime.Text);
+            TimeSpan appointmentTime = TimeSpan.Parse(textBoxAppointmentTime.Text);
             appointment.appointment_time = appointmentTime;
 
             if (checkBoxPaymentStatus.Checked)
             {
                 appointment.payment_status = "Y";
             }
-            
+
 
             // now update the db
             if (Controller<BarberShopEntities, Appointment>.AddEntity(appointment) == null)
@@ -114,16 +114,16 @@ namespace BarberShopApp
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void updatedShopData(object sender=null, EventArgs e=null)
+        private void updatedShopData(object sender = null, EventArgs e = null)
         {
-             shopId = (int)dataGridViewShop.CurrentRow.Cells["shop_id"].Value;
+            shopId = (int)dataGridViewShop.CurrentRow.Cells["shop_id"].Value;
 
             var queryGetData = Controller<BarberShopEntities, Barber_Avail>.GetEntities(it => it.shop_id == Convert.ToInt32(shopId));
-            
+
             dataGridViewBarber.DataSource = queryGetData.ToList();
-            string[] columnsToHide = {"Appointments","Shops" };
-            foreach (string column in columnsToHide)
-                dataGridViewBarber.Columns[column].Visible = false;
+            //string[] columnsToHide = {"Appointments","Shops" };
+            //foreach (string column in columnsToHide)
+            //    dataGridViewBarber.Columns[column].Visible = false;
 
         }
         /// <summary>
@@ -131,10 +131,10 @@ namespace BarberShopApp
         /// </summary>
         private void AddAppointmentMainForm_Load()
         {
-            InitializeDataGridView<User>(dataGridViewUser,"user_id", "user_email", "user_contact", "Appointments");
+            InitializeDataGridView<User>(dataGridViewUser, "user_id", "user_email", "user_contact", "Appointments");
             InitializeDataGridView<Shop>(dataGridViewShop, "shop_id", "Barber_Avail");
             InitializeDataGridView<Barber_Avail>(dataGridViewBarber);
-            InitializeDataGridView<Haircut>(dataGridViewHaircut,"picture","haircut_id","Appointments");
+            InitializeDataGridView<Haircut>(dataGridViewHaircut, "picture", "haircut_id", "Appointments");
 
         }
 
