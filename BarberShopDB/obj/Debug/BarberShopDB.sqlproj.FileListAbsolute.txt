@@ -34,3 +34,7 @@ C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\bin\Debug\BarberShopDB.pdb
 C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\obj\Debug\BarberShopDB.sqlproj.AssemblyReference.cache
 C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\obj\Debug\BarberShopDB.dll
 C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\obj\Debug\BarberShopDB.pdb
+C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\obj\Debug\Model.xml
+C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\obj\Debug\refactor.xml
+C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\obj\Debug\postdeploy.sql
+C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\obj\Debug\predeploy.sql

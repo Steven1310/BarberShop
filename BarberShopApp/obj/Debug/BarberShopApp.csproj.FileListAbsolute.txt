@@ -125,3 +125,4 @@ C:\Users\User\Desktop\barber\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.cs
 C:\Users\User\Desktop\barber\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\barber\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.exe
 C:\Users\User\Desktop\barber\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.pdb
+C:\Users\User\Desktop\barber\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.csproj.CopyComplete
