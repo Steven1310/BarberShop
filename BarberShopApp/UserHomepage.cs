@@ -43,7 +43,7 @@ namespace BarberShopApp
         }
 
         /// <summary>
-        /// 
+        /// add or update form
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="dataGridView"></param>
@@ -70,7 +70,7 @@ namespace BarberShopApp
             addUpdateForm.Hide();
         }
         /// <summary>
-        /// 
+        /// datagridview initialize to show the data in datagridview from ef
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="gridView"></param>
@@ -98,7 +98,7 @@ namespace BarberShopApp
         }
 
         /// <summary>
-        /// 
+        /// initialize datagridview
         /// </summary>
         /// <param name="gridView"></param>
         private void InnitDatagridviewProperties(DataGridView gridView)

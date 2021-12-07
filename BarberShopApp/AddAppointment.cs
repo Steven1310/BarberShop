@@ -14,13 +14,13 @@ namespace BarberShopApp
 {
     public partial class AddAppointment : Form
     {
-        private int userId;
-        private int shopId;
-        private int haircutId;
-        private int barberAvailId;
-        private int totalPrice;
+        private int userId=-1;
+        private int shopId=-1;
+        private int haircutId=-1;
+        private int barberAvailId=-1;
+        private int totalPrice=-1;
         private int barberPrice;
-        private int barberId;
+        private int barberId=-1;
 
         public AddAppointment()
         {
@@ -39,7 +39,7 @@ namespace BarberShopApp
 
         }
         /// <summary>
-        /// 
+        /// update the id clicked by the user from the gridview
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -52,7 +52,7 @@ namespace BarberShopApp
 
         }
         /// <summary>
-        /// 
+        ///  update the id clicked by the user from the gridview
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -64,7 +64,7 @@ namespace BarberShopApp
 
         }
         /// <summary>
-        /// 
+        ///  update the id clicked by the user from the gridview
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -73,50 +73,58 @@ namespace BarberShopApp
             userId = (int)dataGridViewUser.CurrentRow.Cells["user_id"].Value;
         }
         /// <summary>
-        /// 
+        ///  update the id clicked by the user from the gridview
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void bookAppointment(object sender, EventArgs e)
         {
-            // get the user data from the textboxes
-            Appointment appointment = new Appointment();
-            appointment.user_id = userId;
-            appointment.barberAvail_id = barberAvailId;
-            appointment.haircut_id = haircutId;
-            appointment.status_id = "PENDING";
-            TimeSpan appointmentTime = TimeSpan.Parse(textBoxAppointmentTime.Text);
-            appointment.appointment_time = appointmentTime;
-
-            if (checkBoxPaymentStatus.Checked)
+            if (userId == -1 || barberAvailId == -1 || haircutId == -1 || textBoxAppointmentTime.Text=="")
             {
-                appointment.payment_status = "Y";
+                MessageBox.Show("Data field needs to be selected or inserted");
             }
-
-
-            // now update the db
-            if (Controller<BarberShopEntities, Appointment>.AddEntity(appointment) == null)
-            {
-                MessageBox.Show("Appointment add to database failed");
-                return;
-            }
-
-
             else
             {
-                MessageBox.Show("Appointment added successfully");
-                UserHomepage userHomepage = new UserHomepage();
-                userHomepage.Show();
+                // get the user data from the textboxes
+                Appointment appointment = new Appointment();
+                appointment.user_id = userId;
+                appointment.barberAvail_id = barberAvailId;
+                appointment.haircut_id = haircutId;
+                appointment.status_id = "PENDING";
+                TimeSpan appointmentTime = TimeSpan.Parse(textBoxAppointmentTime.Text);
+                appointment.appointment_time = appointmentTime;
+                if (checkBoxPaymentStatus.Checked)
+                {
+                    appointment.payment_status = "Y";
+                }
+                else
+                    appointment.payment_status = "N";
+
+                // now update the db
+                if (Controller<BarberShopEntities, Appointment>.AddEntity(appointment) == null)
+                {
+                    MessageBox.Show("Appointment add to database failed");
+                    return;
+                }
+
+
+                else
+                {
+                    MessageBox.Show("Appointment added successfully");
+                    UserHomepage userHomepage = new UserHomepage();
+                    userHomepage.Show();
+                }
+
+                // if everyting is ok, close the form.
+
+                this.DialogResult = DialogResult.OK;
+
+                Close(); // this will not dispose the form on hide!
             }
 
-            // if everyting is ok, close the form.
-
-            this.DialogResult = DialogResult.OK;
-
-            Close(); // this will not dispose the form on hide!
         }
         /// <summary>
-        /// 
+        ///  update the id clicked by the user from the gridview
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -127,13 +135,10 @@ namespace BarberShopApp
             var queryGetData = Controller<BarberShopEntities, Barber_Avail>.GetEntities(it => it.shop_id == Convert.ToInt32(shopId));
 
             dataGridViewBarber.DataSource = queryGetData.ToList();
-            //string[] columnsToHide = {"Appointments","Shops" };
-            //foreach (string column in columnsToHide)
-            //    dataGridViewBarber.Columns[column].Visible = false;
 
         }
         /// <summary>
-        /// 
+        /// initialize the form
         /// </summary>
         private void AddAppointmentMainForm_Load()
         {
