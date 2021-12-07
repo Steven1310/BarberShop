@@ -57,3 +57,15 @@ C:\Users\User\Desktop\barber\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\Barb
 C:\Users\User\Desktop\barber\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.CopyComplete
 C:\Users\User\Desktop\barber\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.dll
 C:\Users\User\Desktop\barber\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.pdb
+C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\BarberShopCodeFirstFromDB.dll.config
+C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\BarberShopCodeFirstFromDB.dll
+C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\BarberShopCodeFirstFromDB.pdb
+C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.CopyComplete
+C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.dll
+C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.pdb
