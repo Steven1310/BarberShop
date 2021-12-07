@@ -167,7 +167,7 @@ namespace SeedDatabaseExtensions
 			// seed Barber_Avail data
 			List<Barber_Avail> barber_AvailList = new List<Barber_Avail>()  {
 					new Barber_Avail{barberAvail_id=1,shop_id=1,barber_id=1,shift_id=1,Shop=shops[1],Barber_shifts=barber_shifts[1]},
-					new Barber_Avail{barberAvail_id=2,shop_id=1,barber_id=2,shift_id=2,Shop=shops[1],Barber_shifts=barber_shifts[2]},
+					/*new Barber_Avail{barberAvail_id=2,shop_id=1,barber_id=2,shift_id=2,Shop=shops[1],Barber_shifts=barber_shifts[2]},
 					new Barber_Avail{barberAvail_id=3,shop_id=1,barber_id=3,shift_id=3,Shop=shops[1],Barber_shifts=barber_shifts[3]},
 					new Barber_Avail{barberAvail_id=4,shop_id=2,barber_id=4,shift_id=4,Shop=shops[2],Barber_shifts=barber_shifts[4]},
 					new Barber_Avail{barberAvail_id=5,shop_id=2,barber_id=5,shift_id=5,Shop=shops[2],Barber_shifts=barber_shifts[5]},
@@ -180,7 +180,7 @@ namespace SeedDatabaseExtensions
 					new Barber_Avail{barberAvail_id=12,shop_id=4,barber_id=2,shift_id=2,Shop=shops[4],Barber_shifts=barber_shifts[2]},
 					new Barber_Avail{barberAvail_id=13,shop_id=5,barber_id=3,shift_id=3,Shop=shops[5],Barber_shifts=barber_shifts[3]},
 					new Barber_Avail{barberAvail_id=14,shop_id=5,barber_id=4,shift_id=4,Shop=shops[5],Barber_shifts=barber_shifts[4]},
-					new Barber_Avail{barberAvail_id=15,shop_id=5,barber_id=5,shift_id=5,Shop=shops[5],Barber_shifts=barber_shifts[5]}
+					new Barber_Avail{barberAvail_id=15,shop_id=5,barber_id=5,shift_id=5,Shop=shops[5],Barber_shifts=barber_shifts[5]}*/
 			};
 
 			// use a dictionary to set the barberAvail_id fields in Appointments
