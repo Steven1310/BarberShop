@@ -40,12 +40,10 @@ namespace BarberShopApp
 
         private void BarberShopAppMainForm_Load()
         {
-            using (BarberShopEntities context = new BarberShopEntities())
-            {
-
-                context.SeedDatabase();
-
-            }
+            //using (BarberShopEntities context = new BarberShopEntities())
+            //{
+            //    context.SeedDatabase();
+            //}
 
 
 

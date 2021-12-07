@@ -139,14 +139,14 @@ namespace BarberShopApp
             this.labelDateTimeAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDateTimeAppointment.Location = new System.Drawing.Point(378, 213);
             this.labelDateTimeAppointment.Name = "labelDateTimeAppointment";
-            this.labelDateTimeAppointment.Size = new System.Drawing.Size(108, 13);
+            this.labelDateTimeAppointment.Size = new System.Drawing.Size(186, 13);
             this.labelDateTimeAppointment.TabIndex = 9;
-            this.labelDateTimeAppointment.Text = "Appointment Time";
+            this.labelDateTimeAppointment.Text = "Appointment Time: (HH:MM:SS)";
             // 
             // checkBoxPaymentStatus
             // 
             this.checkBoxPaymentStatus.AutoSize = true;
-            this.checkBoxPaymentStatus.Location = new System.Drawing.Point(381, 334);
+            this.checkBoxPaymentStatus.Location = new System.Drawing.Point(381, 345);
             this.checkBoxPaymentStatus.Name = "checkBoxPaymentStatus";
             this.checkBoxPaymentStatus.Size = new System.Drawing.Size(100, 17);
             this.checkBoxPaymentStatus.TabIndex = 11;
@@ -155,7 +155,7 @@ namespace BarberShopApp
             // 
             // buttonBookAppointment
             // 
-            this.buttonBookAppointment.Location = new System.Drawing.Point(682, 314);
+            this.buttonBookAppointment.Location = new System.Drawing.Point(682, 325);
             this.buttonBookAppointment.Name = "buttonBookAppointment";
             this.buttonBookAppointment.Size = new System.Drawing.Size(76, 37);
             this.buttonBookAppointment.TabIndex = 12;
@@ -168,7 +168,6 @@ namespace BarberShopApp
             this.textBoxAppointmentTime.Name = "textBoxAppointmentTime";
             this.textBoxAppointmentTime.Size = new System.Drawing.Size(122, 20);
             this.textBoxAppointmentTime.TabIndex = 13;
-            this.textBoxAppointmentTime.Text = "HH:MM:SS";
             // 
             // labelShowPrice
             // 
@@ -176,15 +175,15 @@ namespace BarberShopApp
             this.labelShowPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelShowPrice.Location = new System.Drawing.Point(378, 278);
             this.labelShowPrice.Name = "labelShowPrice";
-            this.labelShowPrice.Size = new System.Drawing.Size(36, 13);
+            this.labelShowPrice.Size = new System.Drawing.Size(153, 13);
             this.labelShowPrice.TabIndex = 14;
-            this.labelShowPrice.Text = "Price";
+            this.labelShowPrice.Text = "Haircut Price + Shift Rate";
             // 
             // labelPrice
             // 
             this.labelPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice.Location = new System.Drawing.Point(410, 291);
+            this.labelPrice.Location = new System.Drawing.Point(410, 301);
             this.labelPrice.Name = "labelPrice";
             this.labelPrice.Size = new System.Drawing.Size(93, 31);
             this.labelPrice.TabIndex = 15;

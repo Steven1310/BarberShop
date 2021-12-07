@@ -28,3 +28,9 @@ C:\Users\User\Downloads\BarberShop-main\BarberShop-main\BarberShopDB\obj\Debug\p
 C:\Users\User\Downloads\BarberShop-main\BarberShop-main\BarberShopDB\obj\Debug\predeploy.sql
 C:\Users\User\Downloads\BarberShop-main\BarberShop-main\BarberShopDB\obj\Debug\BarberShopDB.dll
 C:\Users\User\Downloads\BarberShop-main\BarberShop-main\BarberShopDB\obj\Debug\BarberShopDB.pdb
+C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\bin\Debug\BarberShopDB.dacpac
+C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\bin\Debug\BarberShopDB.dll
+C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\bin\Debug\BarberShopDB.pdb
+C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\obj\Debug\BarberShopDB.sqlproj.AssemblyReference.cache
+C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\obj\Debug\BarberShopDB.dll
+C:\Users\User\Desktop\barber\BarberShop\BarberShopDB\obj\Debug\BarberShopDB.pdb
