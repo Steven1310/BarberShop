@@ -19,6 +19,8 @@ namespace BarberShopApp
         private int haircutId;
         private int barberAvailId;
         private int totalPrice;
+        private int barberPrice;
+        private int barberId;
 
         public AddAppointment()
         {
@@ -44,6 +46,10 @@ namespace BarberShopApp
         private void updatedBarberAvailData(object sender, EventArgs e)
         {
             barberAvailId = (int)dataGridViewBarber.CurrentRow.Cells["barberAvail_id"].Value;
+            barberId = (int)dataGridViewBarber.CurrentRow.Cells["shift_id"].Value;
+            barberPrice = Controller<BarberShopEntities, Barber_shifts>.GetEntities(it => it.shift_id == Convert.ToInt32(barberId)).Select(x=>x.price).SingleOrDefault();
+          
+
         }
         /// <summary>
         /// 
@@ -53,7 +59,7 @@ namespace BarberShopApp
         private void updatedHaircutData(object sender, EventArgs e)
         {
             haircutId = (int)dataGridViewHaircut.CurrentRow.Cells["haircut_id"].Value;
-            totalPrice = (int)dataGridViewHaircut.CurrentRow.Cells["price"].Value;
+            totalPrice = (int)dataGridViewHaircut.CurrentRow.Cells["price"].Value + barberPrice;
             labelPrice.Text = "$" + totalPrice.ToString();
 
         }
