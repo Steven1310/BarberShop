@@ -41,6 +41,8 @@ namespace BarberShopApp
             this.checkBoxPaymentStatus = new System.Windows.Forms.CheckBox();
             this.buttonBookAppointment = new System.Windows.Forms.Button();
             this.textBoxAppointmentTime = new System.Windows.Forms.TextBox();
+            this.labelShowPrice = new System.Windows.Forms.Label();
+            this.labelPrice = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBarber)).BeginInit();
@@ -137,14 +139,14 @@ namespace BarberShopApp
             this.labelDateTimeAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDateTimeAppointment.Location = new System.Drawing.Point(378, 213);
             this.labelDateTimeAppointment.Name = "labelDateTimeAppointment";
-            this.labelDateTimeAppointment.Size = new System.Drawing.Size(108, 13);
+            this.labelDateTimeAppointment.Size = new System.Drawing.Size(186, 13);
             this.labelDateTimeAppointment.TabIndex = 9;
-            this.labelDateTimeAppointment.Text = "Appointment Time";
+            this.labelDateTimeAppointment.Text = "Appointment Time: (HH:MM:SS)";
             // 
             // checkBoxPaymentStatus
             // 
             this.checkBoxPaymentStatus.AutoSize = true;
-            this.checkBoxPaymentStatus.Location = new System.Drawing.Point(381, 314);
+            this.checkBoxPaymentStatus.Location = new System.Drawing.Point(381, 345);
             this.checkBoxPaymentStatus.Name = "checkBoxPaymentStatus";
             this.checkBoxPaymentStatus.Size = new System.Drawing.Size(100, 17);
             this.checkBoxPaymentStatus.TabIndex = 11;
@@ -153,7 +155,7 @@ namespace BarberShopApp
             // 
             // buttonBookAppointment
             // 
-            this.buttonBookAppointment.Location = new System.Drawing.Point(682, 314);
+            this.buttonBookAppointment.Location = new System.Drawing.Point(682, 325);
             this.buttonBookAppointment.Name = "buttonBookAppointment";
             this.buttonBookAppointment.Size = new System.Drawing.Size(76, 37);
             this.buttonBookAppointment.TabIndex = 12;
@@ -162,17 +164,38 @@ namespace BarberShopApp
             // 
             // textBoxAppointmentTime
             // 
-            this.textBoxAppointmentTime.Location = new System.Drawing.Point(381, 264);
+            this.textBoxAppointmentTime.Location = new System.Drawing.Point(381, 241);
             this.textBoxAppointmentTime.Name = "textBoxAppointmentTime";
             this.textBoxAppointmentTime.Size = new System.Drawing.Size(122, 20);
             this.textBoxAppointmentTime.TabIndex = 13;
-            this.textBoxAppointmentTime.Text = "HH:MM:SS";
+            // 
+            // labelShowPrice
+            // 
+            this.labelShowPrice.AutoSize = true;
+            this.labelShowPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelShowPrice.Location = new System.Drawing.Point(378, 278);
+            this.labelShowPrice.Name = "labelShowPrice";
+            this.labelShowPrice.Size = new System.Drawing.Size(153, 13);
+            this.labelShowPrice.TabIndex = 14;
+            this.labelShowPrice.Text = "Haircut Price + Shift Rate";
+            // 
+            // labelPrice
+            // 
+            this.labelPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPrice.Location = new System.Drawing.Point(410, 301);
+            this.labelPrice.Name = "labelPrice";
+            this.labelPrice.Size = new System.Drawing.Size(93, 31);
+            this.labelPrice.TabIndex = 15;
+            this.labelPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AddAppointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1026, 444);
+            this.Controls.Add(this.labelPrice);
+            this.Controls.Add(this.labelShowPrice);
             this.Controls.Add(this.textBoxAppointmentTime);
             this.Controls.Add(this.buttonBookAppointment);
             this.Controls.Add(this.checkBoxPaymentStatus);
@@ -210,5 +233,7 @@ namespace BarberShopApp
         private System.Windows.Forms.CheckBox checkBoxPaymentStatus;
         private System.Windows.Forms.Button buttonBookAppointment;
         private System.Windows.Forms.TextBox textBoxAppointmentTime;
+        private System.Windows.Forms.Label labelShowPrice;
+        private System.Windows.Forms.Label labelPrice;
     }
 }

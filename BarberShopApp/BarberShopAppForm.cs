@@ -42,7 +42,7 @@ namespace BarberShopApp
         {
             using (BarberShopEntities context = new BarberShopEntities())
             {
-               context.SeedDatabase();
+                context.SeedDatabase();
             }
 
 

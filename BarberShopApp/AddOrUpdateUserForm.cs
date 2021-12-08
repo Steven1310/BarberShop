@@ -29,7 +29,11 @@ namespace BarberShopApp
 
             dataGridViewUsers.Click += (s, e) => GetSelectedUser();
         }
-
+        /// <summary>
+        /// add the user
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(textBoxUserName.Text))
@@ -94,7 +98,11 @@ namespace BarberShopApp
 
 
         }
-
+        /// <summary>
+        /// update the user
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonUpdate_Click(object sender, EventArgs e)
         {
             if (!(dataGridViewUsers.CurrentRow.DataBoundItem is User user))
@@ -151,7 +159,9 @@ namespace BarberShopApp
             Close(); // this will not dispose the form on hide!
 
         }
-
+        /// <summary>
+        /// get the selected user
+        /// </summary>
         private void GetSelectedUser()
         {
             if (!(dataGridViewUsers.CurrentRow.DataBoundItem is User user))
@@ -164,7 +174,11 @@ namespace BarberShopApp
         }
 
 
-
+        /// <summary>
+        /// initiazile form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddOrUpdateUsersForm_Load(object sender, EventArgs e)
         {
             dataGridViewUsers.AllowUserToAddRows = false;
