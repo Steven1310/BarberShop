@@ -82,7 +82,7 @@ namespace SeedDatabaseExtensions
 				new Barber { barber_id=9, barber_name = "Augustus",barber_email = "ahedan8@vistaprint.com", barber_contact = "767-738-5395" },
 				new Barber { barber_id=10, barber_name = "Kingsley",barber_email = "kwarters9@yelp.com", barber_contact = "346-838-8774" },
 				new Barber { barber_id=11, barber_name = "Florinda",barber_email = "jstacka@google.com", barber_contact = "574-865-0888" },
-				new Barber { barber_id=12, barber_name = "Bryon",barber_email = "rfreakq@goo.com'", barber_contact = "767-221-3642" },
+				new Barber { barber_id=12, barber_name = "Bryon",barber_email = "rfreakq@goo.com", barber_contact = "767-221-3642" },
 				new Barber { barber_id=13, barber_name = "Inna",barber_email = "eesbergers@acquirethisname.com", barber_contact = "273-481-5406" },
 				new Barber { barber_id=14, barber_name = "Winnie",barber_email = "llehuquetu@angelfire.com", barber_contact = "371-785-7410" },
 				new Barber { barber_id=15, barber_name = "Rod",barber_email = "edeehanw@tamu.edu", barber_contact = "837-564-7153" }
@@ -191,11 +191,16 @@ namespace SeedDatabaseExtensions
 
 			// seed Haircut data
 			List<Appointment> appointmentList = new List<Appointment>()  {
-					new Appointment{appointment_id=1,barberAvail_id=1,haircut_id=1,user_id=1,appointment_time=TimeSpan.Parse("14:00:00"),status_id="PENDING",payment_status="N",review=0,Barber_Avail=barber_Avail[1],Haircut=haircuts[1],User=users[1]},
+					new Appointment{appointment_id=1,barberAvail_id=1,haircut_id=1,user_id=1,appointment_time=TimeSpan.Parse("14:00:00"),status_id="PENDING",payment_status="N",review=0,Haircut=haircuts[1],Status=status["PENDING"],User=users[1],Barber_Avail=barber_Avail[1]},
+					//new Appointment{appointment_id=1,barberAvail_id=1,haircut_id=1,user_id=1,appointment_time=TimeSpan.Parse("14:00:00"),status_id="PENDING",payment_status="N",review=0,Barber_Avail=barber_Avail[1],Haircut=haircuts[1],User=users[1],Status=status["PENDING"]},
 					/*new Appointment{appointment_id=2,barberAvail_id=4,haircut_id=2,user_id=3,appointment_time=TimeSpan.Parse("11:30:00"),status_id="PENDING",payment_status="N",review=0,Barber_Avail=barber_Avail[1],Haircut=haircuts[1],User=users[1]},
 					new Appointment{appointment_id=3,barberAvail_id=5,haircut_id=3,user_id=1,appointment_time=TimeSpan.Parse("13:30:00"),status_id="ACCEPTED",payment_status="N",review=0,Barber_Avail=barber_Avail[1],Haircut=haircuts[1],User=users[1]},
 					new Appointment{appointment_id=4,barberAvail_id=8,haircut_id=4,user_id=4,appointment_time=TimeSpan.Parse("14:15:00"),status_id="REJECTED",payment_status="N",review=0,Barber_Avail=barber_Avail[1],Haircut=haircuts[1],User=users[1]}*/
 			};
+
+			Dictionary<int, Appointment> appointment = appointmentList.ToDictionary(x => x.appointment_id, x => x);
+			context.Appointments.AddRange(appointment.Values);
+			context.SaveChanges();
 
 		}
     }

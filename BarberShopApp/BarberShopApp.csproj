@@ -62,6 +62,18 @@
     <Compile Include="AddAppointment.Designer.cs">
       <DependentUpon>AddAppointment.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddOrUpdateBarberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrUpdateBarberForm.Designer.cs">
+      <DependentUpon>AddOrUpdateBarberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddOrUpdateShops.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrUpdateShops.Designer.cs">
+      <DependentUpon>AddOrUpdateShops.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddOrUpdateUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +102,12 @@
     </Compile>
     <EmbeddedResource Include="AddAppointment.resx">
       <DependentUpon>AddAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOrUpdateBarberForm.resx">
+      <DependentUpon>AddOrUpdateBarberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOrUpdateShops.resx">
+      <DependentUpon>AddOrUpdateShops.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddOrUpdateUserForm.resx">
       <DependentUpon>AddOrUpdateUserForm.cs</DependentUpon>
@@ -134,6 +152,10 @@
     <ProjectReference Include="..\BarberShopValidation\BarberShopValidation.csproj">
       <Project>{8752229d-9b32-4f46-a0de-3862d71cefa0}</Project>
       <Name>BarberShopValidation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataTableAccessLayer\DataTableAccessLayer.csproj">
+      <Project>{62046f68-706d-4350-82d1-c205f0ec64de}</Project>
+      <Name>DataTableAccessLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\EFControllerUtilities\EFControllerUtilities.csproj">
       <Project>{f7b44d6d-563a-4d6d-9718-b554924b4d97}</Project>

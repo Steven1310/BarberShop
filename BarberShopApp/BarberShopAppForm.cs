@@ -28,8 +28,8 @@ namespace BarberShopApp
             this.buttonUser.Click += new System.EventHandler(this.buttonUserClick);
 
             //Shows Admin form on Admin button click
-            BarberShopAdminForm barberShopAdminForm = new BarberShopAdminForm();
-            this.buttonAdmin.Click += (s, ee) => barberShopAdminForm.Show();
+            BarberShopAdminForm barberShopAdminForm = null;
+            this.buttonAdmin.Click += (s, ee) => { barberShopAdminForm = new BarberShopAdminForm(); barberShopAdminForm.Show(); };
         }
 
         private void buttonUserClick(object sender, EventArgs e)
