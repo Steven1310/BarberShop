@@ -69,3 +69,15 @@ C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\obj\Debug
 C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.CopyComplete
 C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.dll
 C:\Users\User\Desktop\barber\test\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.pdb
+C:\GithubProject\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\BarberShopCodeFirstFromDB.dll.config
+C:\GithubProject\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\BarberShopCodeFirstFromDB.dll
+C:\GithubProject\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\BarberShopCodeFirstFromDB.pdb
+C:\GithubProject\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.dll
+C:\GithubProject\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\GithubProject\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.xml
+C:\GithubProject\BarberShop\BarberShopCodeFirstFromDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\GithubProject\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.AssemblyReference.cache
+C:\GithubProject\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.CoreCompileInputs.cache
+C:\GithubProject\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.csproj.CopyComplete
+C:\GithubProject\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.dll
+C:\GithubProject\BarberShop\BarberShopCodeFirstFromDB\obj\Debug\BarberShopCodeFirstFromDB.pdb

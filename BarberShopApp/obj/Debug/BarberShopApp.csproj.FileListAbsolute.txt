@@ -152,3 +152,15 @@ C:\Users\User\Desktop\barber\test\BarberShop\BarberShopApp\obj\Debug\BarberShopA
 C:\Users\User\Desktop\barber\test\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\barber\test\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.exe
 C:\Users\User\Desktop\barber\test\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.pdb
+C:\GithubProject\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.csproj.AssemblyReference.cache
+C:\GithubProject\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.AddAppointment.resources
+C:\GithubProject\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.AddOrUpdateBarberForm.resources
+C:\GithubProject\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.AddOrUpdateShops.resources
+C:\GithubProject\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.AddOrUpdateUserForm.resources
+C:\GithubProject\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.BarberForm.resources
+C:\GithubProject\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.BarberShopAdminForm.resources
+C:\GithubProject\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.BarberShopAppForm.resources
+C:\GithubProject\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.Properties.Resources.resources
+C:\GithubProject\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.UserHomepage.resources
+C:\GithubProject\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.csproj.GenerateResource.cache
+C:\GithubProject\BarberShop\BarberShopApp\obj\Debug\BarberShopApp.csproj.CoreCompileInputs.cache

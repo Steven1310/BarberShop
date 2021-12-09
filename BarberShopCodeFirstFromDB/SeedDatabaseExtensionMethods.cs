@@ -9,7 +9,7 @@ namespace SeedDatabaseExtensions
 {
 
 	public static class SeedDatabaseExtensionMethods
-    {
+	{
 		/// <summary>
 		/// zero out the db tables, then seed all tables with initial data
 		/// </summary>
@@ -82,7 +82,7 @@ namespace SeedDatabaseExtensions
 				new Barber { barber_id=9, barber_name = "Augustus",barber_email = "ahedan8@vistaprint.com", barber_contact = "767-738-5395" },
 				new Barber { barber_id=10, barber_name = "Kingsley",barber_email = "kwarters9@yelp.com", barber_contact = "346-838-8774" },
 				new Barber { barber_id=11, barber_name = "Florinda",barber_email = "jstacka@google.com", barber_contact = "574-865-0888" },
-				new Barber { barber_id=12, barber_name = "Bryon",barber_email = "rfreakq@goo.com", barber_contact = "767-221-3642" },
+				new Barber { barber_id=12, barber_name = "Bryon",barber_email = "rfreakq@goo.com'", barber_contact = "767-221-3642" },
 				new Barber { barber_id=13, barber_name = "Inna",barber_email = "eesbergers@acquirethisname.com", barber_contact = "273-481-5406" },
 				new Barber { barber_id=14, barber_name = "Winnie",barber_email = "llehuquetu@angelfire.com", barber_contact = "371-785-7410" },
 				new Barber { barber_id=15, barber_name = "Rod",barber_email = "edeehanw@tamu.edu", barber_contact = "837-564-7153" }
@@ -101,10 +101,10 @@ namespace SeedDatabaseExtensions
 			// seed Shifts data
 			List<Barber_shifts> barber_shiftsList = new List<Barber_shifts>()  {
 					new Barber_shifts{barber_id=1,shift_id=1,price=15,Barber=barbers[1],Shift=shifts[1]},
-                    new Barber_shifts{barber_id=2,shift_id=2,price=25,Barber=barbers[2],Shift=shifts[2]},
-                    new Barber_shifts{barber_id=3,shift_id=3,price=20,Barber=barbers[3],Shift=shifts[3]},
-                    new Barber_shifts{barber_id=4,shift_id=4,price=15,Barber=barbers[4],Shift=shifts[4]},
-                    new Barber_shifts{barber_id=5,shift_id=5,price=15,Barber=barbers[5],Shift=shifts[5]},
+					new Barber_shifts{barber_id=2,shift_id=2,price=25,Barber=barbers[2],Shift=shifts[2]},
+					new Barber_shifts{barber_id=3,shift_id=3,price=20,Barber=barbers[3],Shift=shifts[3]},
+					new Barber_shifts{barber_id=4,shift_id=4,price=15,Barber=barbers[4],Shift=shifts[4]},
+					new Barber_shifts{barber_id=5,shift_id=5,price=15,Barber=barbers[5],Shift=shifts[5]},
 					new Barber_shifts{barber_id=6,shift_id=6,price=20,Barber=barbers[6],Shift=shifts[6]},
 					new Barber_shifts{barber_id=7,shift_id=7,price=25,Barber=barbers[7],Shift=shifts[7]},
 					new Barber_shifts{barber_id=8,shift_id=8,price=15,Barber=barbers[8],Shift=shifts[8]},
@@ -122,6 +122,10 @@ namespace SeedDatabaseExtensions
 			// seed Shops data
 			List<Shop> shopList = new List<Shop>()  {
 					new Shop{shop_id=1,shop_name="Deckow Bogan and Hammes", location="3943 Tennessee Junction", postal_code="568 92"},
+							new Shop{shop_id=2,shop_name="Ferry, D''Amore and Krajcik", location="80 Bunting Pass", postal_code="9201"},
+					new Shop{shop_id=3,shop_name="King, Thiel and Moore", location="3943 Tennessee Junction", postal_code="7301"},
+					new Shop{shop_id=4,shop_name="Deckow Bogan and Hammes", location="8096 Colorado Hill", postal_code="5302"},
+					new Shop{shop_id=5,shop_name="Zemlak-Barton", location="075 Larry Trail", postal_code="4302"}
 			};
 
 			// use a dictionary to set the shop_id fields in Barber_Avail
@@ -133,6 +137,15 @@ namespace SeedDatabaseExtensions
 			// seed Haircut data
 			List<Haircut> haircutList = new List<Haircut>()  {
 					new Haircut{ haircut_id=1,picture="a",description="undercut", price=12},
+					new Haircut{ haircut_id=2,picture="b",description="quiff", price=12},
+					new Haircut{ haircut_id=3,picture="c",description="side part", price=13},
+					new Haircut{ haircut_id=4,picture="d",description="buzz cut", price=13},
+					new Haircut{ haircut_id=5,picture="e",description="modern french crop", price=13},
+					new Haircut{ haircut_id=6,picture="f",description="Forward Stranded Top with Faded Sides", price=14},
+					new Haircut{ haircut_id=7,picture="g",description="Simple Top and Mustache Duet", price=15},
+					new Haircut{ haircut_id=8,picture="h",description="Classic Taper and Brush-Back", price=15},
+					new Haircut{ haircut_id=9,picture="i",description="Afro Mid Temple Fade", price=15},
+					new Haircut{ haircut_id=10,picture="j",description="Short Textured Men Haircut", price=15},
 			};
 
 			// use a dictionary to set the haircut_id fields in Appointments
@@ -143,6 +156,15 @@ namespace SeedDatabaseExtensions
 			// seed Haircut data
 			List<User> userList = new List<User>()  {
 					new User{user_id=1,user_name="Maribelle Gurton",user_email="mgurton0@cisco.com",user_contact="592-244-8780"},
+						new User{user_id=2,user_name="Gilles Land",user_email="gland1@wikia.com",user_contact="982-904-8538"},
+					new User{user_id=3,user_name="Sammie Whichelow",user_email="swhichelow2@yahoo.co.jp",user_contact="115-117-3750"},
+					new User{user_id=4,user_name="Archibold Chestle",user_email="achestle3@ifeng.com",user_contact="751-286-0322"},
+					new User{user_id=5,user_name="Shaughn Puckett",user_email="spuckett4@businesswire.com",user_contact="516-865-3047"},
+					new User{user_id=6,user_name="Bonnee Clere",user_email="bclere5@opera.com",user_contact="576-660-3857"},
+					new User{user_id=7,user_name="Packston Ector",user_email="pector6@clickbank.net",user_contact="311-842-6119"},
+					new User{user_id=8,user_name="Redford Tinghill",user_email="rtinghill7@deviantart.com",user_contact="592-244-8780"},
+					new User{user_id=9,user_name="Jodi Biglin",user_email="jbiglin8@yandex.ru",user_contact="757-579-7339"},
+					new User{user_id=10,user_name="Nikolaos Diable",user_email="ndiable9@thetimes.co.uk",user_contact="141-579-1270"},
 			};
 
 			// use a dictionary to set the user_id fields in Appointments
@@ -167,7 +189,7 @@ namespace SeedDatabaseExtensions
 			// seed Barber_Avail data
 			List<Barber_Avail> barber_AvailList = new List<Barber_Avail>()  {
 					new Barber_Avail{barberAvail_id=1,shop_id=1,barber_id=1,shift_id=1,Shop=shops[1],Barber_shifts=barber_shifts[1]},
-					/*new Barber_Avail{barberAvail_id=2,shop_id=1,barber_id=2,shift_id=2,Shop=shops[1],Barber_shifts=barber_shifts[2]},
+					new Barber_Avail{barberAvail_id=2,shop_id=1,barber_id=2,shift_id=2,Shop=shops[1],Barber_shifts=barber_shifts[2]},
 					new Barber_Avail{barberAvail_id=3,shop_id=1,barber_id=3,shift_id=3,Shop=shops[1],Barber_shifts=barber_shifts[3]},
 					new Barber_Avail{barberAvail_id=4,shop_id=2,barber_id=4,shift_id=4,Shop=shops[2],Barber_shifts=barber_shifts[4]},
 					new Barber_Avail{barberAvail_id=5,shop_id=2,barber_id=5,shift_id=5,Shop=shops[2],Barber_shifts=barber_shifts[5]},
@@ -180,7 +202,7 @@ namespace SeedDatabaseExtensions
 					new Barber_Avail{barberAvail_id=12,shop_id=4,barber_id=2,shift_id=2,Shop=shops[4],Barber_shifts=barber_shifts[2]},
 					new Barber_Avail{barberAvail_id=13,shop_id=5,barber_id=3,shift_id=3,Shop=shops[5],Barber_shifts=barber_shifts[3]},
 					new Barber_Avail{barberAvail_id=14,shop_id=5,barber_id=4,shift_id=4,Shop=shops[5],Barber_shifts=barber_shifts[4]},
-					new Barber_Avail{barberAvail_id=15,shop_id=5,barber_id=5,shift_id=5,Shop=shops[5],Barber_shifts=barber_shifts[5]}*/
+					new Barber_Avail{barberAvail_id=15,shop_id=5,barber_id=5,shift_id=5,Shop=shops[5],Barber_shifts=barber_shifts[5]}
 			};
 
 			// use a dictionary to set the barberAvail_id fields in Appointments
@@ -188,20 +210,16 @@ namespace SeedDatabaseExtensions
 			context.Barber_Avail.AddRange(barber_Avail.Values);
 			context.SaveChanges();
 
-
 			// seed Haircut data
 			List<Appointment> appointmentList = new List<Appointment>()  {
-					new Appointment{appointment_id=1,barberAvail_id=1,haircut_id=1,user_id=1,appointment_time=TimeSpan.Parse("14:00:00"),status_id="PENDING",payment_status="N",review=0,Haircut=haircuts[1],Status=status["PENDING"],User=users[1],Barber_Avail=barber_Avail[1]},
-					//new Appointment{appointment_id=1,barberAvail_id=1,haircut_id=1,user_id=1,appointment_time=TimeSpan.Parse("14:00:00"),status_id="PENDING",payment_status="N",review=0,Barber_Avail=barber_Avail[1],Haircut=haircuts[1],User=users[1],Status=status["PENDING"]},
-					/*new Appointment{appointment_id=2,barberAvail_id=4,haircut_id=2,user_id=3,appointment_time=TimeSpan.Parse("11:30:00"),status_id="PENDING",payment_status="N",review=0,Barber_Avail=barber_Avail[1],Haircut=haircuts[1],User=users[1]},
-					new Appointment{appointment_id=3,barberAvail_id=5,haircut_id=3,user_id=1,appointment_time=TimeSpan.Parse("13:30:00"),status_id="ACCEPTED",payment_status="N",review=0,Barber_Avail=barber_Avail[1],Haircut=haircuts[1],User=users[1]},
-					new Appointment{appointment_id=4,barberAvail_id=8,haircut_id=4,user_id=4,appointment_time=TimeSpan.Parse("14:15:00"),status_id="REJECTED",payment_status="N",review=0,Barber_Avail=barber_Avail[1],Haircut=haircuts[1],User=users[1]}*/
+					new Appointment{appointment_id=1,barberAvail_id=1,haircut_id=1,user_id=1,appointment_time=TimeSpan.Parse("14:00:00"),status_id="PENDING",payment_status="N",review=0,},
+					new Appointment{appointment_id=2,barberAvail_id=2,haircut_id=2,user_id=2,appointment_time=TimeSpan.Parse("11:30:00"),status_id="PENDING",payment_status="N",review=0},
+					new Appointment{appointment_id=3,barberAvail_id=3,haircut_id=3,user_id=3,appointment_time=TimeSpan.Parse("13:30:00"),status_id="ACCEPTED",payment_status="N",review=0},
+					new Appointment{appointment_id=4,barberAvail_id=4,haircut_id=4,user_id=4,appointment_time=TimeSpan.Parse("14:15:00"),status_id="REJECTED",payment_status="N",review=0}
 			};
-
-			Dictionary<int, Appointment> appointment = appointmentList.ToDictionary(x => x.appointment_id, x => x);
-			context.Appointments.AddRange(appointment.Values);
-			context.SaveChanges();
+			context.Appointments.AddRange(appointmentList);
+			int reutls = context.SaveChanges();
 
 		}
-    }
+	}
 }

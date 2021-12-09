@@ -35,39 +35,44 @@
             // 
             // buttonUser
             // 
-            this.buttonUser.Location = new System.Drawing.Point(118, 182);
+            this.buttonUser.Location = new System.Drawing.Point(157, 224);
+            this.buttonUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonUser.Name = "buttonUser";
-            this.buttonUser.Size = new System.Drawing.Size(162, 37);
+            this.buttonUser.Size = new System.Drawing.Size(216, 46);
             this.buttonUser.TabIndex = 0;
             this.buttonUser.Text = "User";
             this.buttonUser.UseVisualStyleBackColor = true;
             // 
             // buttonBarber
             // 
-            this.buttonBarber.Location = new System.Drawing.Point(311, 182);
+            this.buttonBarber.Location = new System.Drawing.Point(415, 224);
+            this.buttonBarber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonBarber.Name = "buttonBarber";
-            this.buttonBarber.Size = new System.Drawing.Size(162, 37);
+            this.buttonBarber.Size = new System.Drawing.Size(216, 46);
             this.buttonBarber.TabIndex = 1;
             this.buttonBarber.Text = "Barber";
             this.buttonBarber.UseVisualStyleBackColor = true;
+            this.buttonBarber.Click += new System.EventHandler(this.buttonBarber_Click);
             // 
             // buttonAdmin
             // 
-            this.buttonAdmin.Location = new System.Drawing.Point(505, 182);
+            this.buttonAdmin.Location = new System.Drawing.Point(673, 224);
+            this.buttonAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAdmin.Name = "buttonAdmin";
-            this.buttonAdmin.Size = new System.Drawing.Size(162, 37);
+            this.buttonAdmin.Size = new System.Drawing.Size(216, 46);
             this.buttonAdmin.TabIndex = 2;
             this.buttonAdmin.Text = "Admin";
             this.buttonAdmin.UseVisualStyleBackColor = true;
             // 
             // BarberShopAppForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.buttonAdmin);
             this.Controls.Add(this.buttonBarber);
             this.Controls.Add(this.buttonUser);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BarberShopAppForm";
             this.Text = "Form1";
             this.ResumeLayout(false);

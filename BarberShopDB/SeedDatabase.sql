@@ -9,7 +9,7 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-
+/*
 SET IDENTITY_INSERT [dbo].[Shifts] ON
 INSERT INTO [dbo].[Shifts] ([shift_id], [shift_start_time], [shift_end_time]) VALUES (1, '13:20:00', '17:50:00');
 INSERT INTO [dbo].[Shifts] ([shift_id], [shift_start_time], [shift_end_time]) VALUES (2, '9:30:00', '17:45:00');
@@ -132,3 +132,4 @@ INSERT INTO [dbo].[Appointment] ([appointment_id],[barberAvail_id],[haircut_id],
 INSERT INTO [dbo].[Appointment] ([appointment_id],[barberAvail_id],[haircut_id],[user_id],[appointment_time],[status_id],[payment_status]) VALUES (4,8,4,4,'14:15:00','REJECTED','N')
 SET IDENTITY_INSERT [dbo].[Appointment] OFF
 GO
+*/

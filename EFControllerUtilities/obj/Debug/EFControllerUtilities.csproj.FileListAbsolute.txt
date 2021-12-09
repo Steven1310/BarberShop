@@ -184,3 +184,15 @@ C:\Users\User\Desktop\barber\test\BarberShop\EFControllerUtilities\obj\Debug\EFC
 C:\Users\User\Desktop\barber\test\BarberShop\EFControllerUtilities\obj\Debug\EFControllerUtilities.csproj.CopyComplete
 C:\Users\User\Desktop\barber\test\BarberShop\EFControllerUtilities\obj\Debug\EFControllerUtilities.dll
 C:\Users\User\Desktop\barber\test\BarberShop\EFControllerUtilities\obj\Debug\EFControllerUtilities.pdb
+C:\GithubProject\BarberShop\EFControllerUtilities\bin\Debug\EFControllerUtilities.dll.config
+C:\GithubProject\BarberShop\EFControllerUtilities\bin\Debug\EFControllerUtilities.dll
+C:\GithubProject\BarberShop\EFControllerUtilities\bin\Debug\EFControllerUtilities.pdb
+C:\GithubProject\BarberShop\EFControllerUtilities\bin\Debug\EntityFramework.dll
+C:\GithubProject\BarberShop\EFControllerUtilities\bin\Debug\EntityFramework.SqlServer.dll
+C:\GithubProject\BarberShop\EFControllerUtilities\bin\Debug\EntityFramework.xml
+C:\GithubProject\BarberShop\EFControllerUtilities\bin\Debug\EntityFramework.SqlServer.xml
+C:\GithubProject\BarberShop\EFControllerUtilities\obj\Debug\EFControllerUtilities.csproj.AssemblyReference.cache
+C:\GithubProject\BarberShop\EFControllerUtilities\obj\Debug\EFControllerUtilities.csproj.CoreCompileInputs.cache
+C:\GithubProject\BarberShop\EFControllerUtilities\obj\Debug\EFControllerUtilities.csproj.CopyComplete
+C:\GithubProject\BarberShop\EFControllerUtilities\obj\Debug\EFControllerUtilities.dll
+C:\GithubProject\BarberShop\EFControllerUtilities\obj\Debug\EFControllerUtilities.pdb
