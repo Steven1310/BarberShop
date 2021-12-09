@@ -82,7 +82,7 @@ namespace SeedDatabaseExtensions
 				new Barber { barber_id=9, barber_name = "Augustus",barber_email = "ahedan8@vistaprint.com", barber_contact = "767-738-5395" },
 				new Barber { barber_id=10, barber_name = "Kingsley",barber_email = "kwarters9@yelp.com", barber_contact = "346-838-8774" },
 				new Barber { barber_id=11, barber_name = "Florinda",barber_email = "jstacka@google.com", barber_contact = "574-865-0888" },
-				new Barber { barber_id=12, barber_name = "Bryon",barber_email = "rfreakq@goo.com'", barber_contact = "767-221-3642" },
+				new Barber { barber_id=12, barber_name = "Bryon",barber_email = "rfreakq@goo.com", barber_contact = "767-221-3642" },
 				new Barber { barber_id=13, barber_name = "Inna",barber_email = "eesbergers@acquirethisname.com", barber_contact = "273-481-5406" },
 				new Barber { barber_id=14, barber_name = "Winnie",barber_email = "llehuquetu@angelfire.com", barber_contact = "371-785-7410" },
 				new Barber { barber_id=15, barber_name = "Rod",barber_email = "edeehanw@tamu.edu", barber_contact = "837-564-7153" }

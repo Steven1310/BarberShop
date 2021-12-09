@@ -123,10 +123,13 @@ namespace BarberShopApp
             }
             else {
                 int appointmentId = Convert.ToInt16(dataGridViewAppointments.CurrentRow.Cells["id"].Value);
-                Appointment appointment = Controller<BarberShopEntities, Appointment>.GetEntitiesWithIncluded("Haircut", "Status", "User", "Barber_Avail").Where(x=>x.appointment_id== appointmentId).FirstOrDefault() as Appointment;
+                /*Appointment appointment = Controller<BarberShopEntities, Appointment>.GetEntitiesWithIncluded("Haircut", "Status", "User", "Barber_Avail").Where(x=>x.appointment_id== appointmentId).FirstOrDefault() as Appointment;
                 var status = Controller<BarberShopEntities, Status>.GetEntities().Where(x => x.status_id == comboBoxNewStatus.SelectedItem.ToString()).FirstOrDefault();
                 appointment.status_id = status.status_id;
-                appointment.Status = status;
+                appointment.Status = status;*/
+                Appointment appointment = Controller<BarberShopEntities, Appointment>.GetEntities().Where(x => x.appointment_id == appointmentId).FirstOrDefault() as Appointment;
+                var status = Controller<BarberShopEntities, Status>.GetEntities().Where(x => x.status_id == comboBoxNewStatus.SelectedItem.ToString()).FirstOrDefault();
+                appointment.status_id = status.status_id.ToString().Trim();
                 if (!Controller<BarberShopEntities, Appointment>.UpdateEntity(appointment))
                 {
                     MessageBox.Show("Status update failed");
@@ -135,7 +138,10 @@ namespace BarberShopApp
                 {
                     MessageBox.Show("Status updated successfully");
                 }
-                LoadAppointments();
+                if (comboBoxStatus.SelectedIndex != -1)
+                    LoadAppointments(comboBoxStatus.SelectedItem.ToString());
+                else 
+                    LoadAppointments();
             }
         }
 
@@ -224,6 +230,7 @@ namespace BarberShopApp
             barberShopDataSet.AcceptChanges();
             barberShopDB.RestoreDataSetFromBackup(barberShopDataSet);
             BarberShopAdminForm_Load();
+            MessageBox.Show("Data Restore Successful");
         }
 
 
@@ -241,6 +248,7 @@ namespace BarberShopApp
             AddDataTableToDataSet("Appointment", barberShopDataSet);
             barberShopDataSet.AcceptChanges();
             barberShopDB.BackupDataSetToXML(barberShopDataSet);
+            MessageBox.Show("Data Backup Successful");
         }
 
 

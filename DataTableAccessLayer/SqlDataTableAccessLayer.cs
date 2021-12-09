@@ -607,10 +607,10 @@ namespace DataTableAccessLayer
 		/// <param name="table"></param>
 		public void BulkInsert(DataTable table) 
 		{
-
-			foreach(DataRow drow in table.Rows) {
-				InsertTableRow(drow);
-			}
+			if (table.TableName != "Appointment")
+				foreach (DataRow drow in table.Rows) {
+					InsertTableRow(drow);
+				}
 
 			/*string bulkInsertCommand = $"Select * into [{table.TableName}] FROM {table}";
 
