@@ -64,3 +64,15 @@ C:\Users\User\Desktop\barber\test\BarberShop\BarberShopValidation\obj\Debug\Barb
 C:\Users\User\Desktop\barber\test\BarberShop\BarberShopValidation\obj\Debug\BarberShopValidation.csproj.CopyComplete
 C:\Users\User\Desktop\barber\test\BarberShop\BarberShopValidation\obj\Debug\BarberShopValidation.dll
 C:\Users\User\Desktop\barber\test\BarberShop\BarberShopValidation\obj\Debug\BarberShopValidation.pdb
+C:\GithubProject\BarberShop\BarberShopValidation\bin\Debug\BarberShopValidation.dll
+C:\GithubProject\BarberShop\BarberShopValidation\bin\Debug\BarberShopValidation.pdb
+C:\GithubProject\BarberShop\BarberShopValidation\bin\Debug\BarberShopCodeFirstFromDB.dll
+C:\GithubProject\BarberShop\BarberShopValidation\bin\Debug\EntityFramework.dll
+C:\GithubProject\BarberShop\BarberShopValidation\bin\Debug\BarberShopCodeFirstFromDB.pdb
+C:\GithubProject\BarberShop\BarberShopValidation\bin\Debug\BarberShopCodeFirstFromDB.dll.config
+C:\GithubProject\BarberShop\BarberShopValidation\bin\Debug\EntityFramework.xml
+C:\GithubProject\BarberShop\BarberShopValidation\obj\Debug\BarberShopValidation.csproj.AssemblyReference.cache
+C:\GithubProject\BarberShop\BarberShopValidation\obj\Debug\BarberShopValidation.csproj.CoreCompileInputs.cache
+C:\GithubProject\BarberShop\BarberShopValidation\obj\Debug\BarberShopValidation.csproj.CopyComplete
+C:\GithubProject\BarberShop\BarberShopValidation\obj\Debug\BarberShopValidation.dll
+C:\GithubProject\BarberShop\BarberShopValidation\obj\Debug\BarberShopValidation.pdb

@@ -48,5 +48,11 @@ namespace BarberShopApp
 
 
         }
+
+        private void buttonBarber_Click(object sender, EventArgs e)
+        {
+            BarberForm barberForm = new BarberForm();
+            barberForm.ShowDialog();
+        }
     }
 }
