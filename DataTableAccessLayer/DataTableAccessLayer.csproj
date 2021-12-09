@@ -4,14 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8752229D-9B32-4F46-A0DE-3862D71CEFA0}</ProjectGuid>
+    <ProjectGuid>{62046F68-706D-4350-82D1-C205F0EC64DE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BarberShopValidation</RootNamespace>
-    <AssemblyName>BarberShopValidation</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>SqlDataTableAccessLayer</RootNamespace>
+    <AssemblyName>SqlDataTableAccessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,16 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BarberValidation.cs" />
-    <Compile Include="ShopValidation.cs" />
-    <Compile Include="UserValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BarberShopCodeFirstFromDB\BarberShopCodeFirstFromDB.csproj">
-      <Project>{C1216DA8-5CC4-4BF0-BF47-0B34BF116750}</Project>
-      <Name>BarberShopCodeFirstFromDB</Name>
-    </ProjectReference>
+    <Compile Include="SqlDataTableAccessLayer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
